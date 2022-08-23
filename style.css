@@ -1,0 +1,342 @@
+
+@font-face {
+    font-family: "CheesePizza";
+    src: url('assets/fonts/CHEESEPIZZA.ttf');
+    }
+
+@font-face {
+    font-family: "Creato";
+    src: url('assets/fonts/CreatoDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: "Vice";
+    src: url('assets/fonts/ViceCitySans.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+.background-wrapper {
+    background-image: url("assets/images/background-image.png");
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-head-bar {
+    display: inline;
+    position: sticky;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background: rgba(138, 131, 131, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(165, 165, 165, 0.5);
+    border-left: 1px solid rgba(168, 168, 168, 0.5);
+    backdrop-filter: blur(2px);
+    top: 0;
+}
+
+.logo {
+    flex-grow: 2;
+    margin-top: 80px;
+}
+
+.logo img:hover{
+	opacity: 0.9;
+}
+
+.logo img:active{
+	opacity: 0.7;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.search-section {
+    width: 100%;
+    align-items: center;
+}
+
+.search-section form {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search-section  label {
+    display: flex;
+    align-items: center;
+    font-family: Vice;
+    font-size: 22px;
+    color: #FF4C29;
+    font-weight: bold;
+}
+
+.search-section input {
+    padding: 5px;
+    border-radius: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+	height: 30px;
+	background: silver;
+	border: 1px solid gray;
+	color: black;
+	font-weight: 400;
+}
+
+.search-section button {
+    background-color: #FF4C29;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section button:hover{
+	background-color: #ff2a00;
+}
+
+.search-section button:active{
+    background-color: #ff2a00;
+	opacity: 0.7;
+}
+
+.search-result .book-search-item {
+    overflow: hidden;
+    word-wrap: break-word;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(2, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.search-result .book-search-item h2 {
+    color: #082032;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-result .book-search-item p {
+    margin: 8px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #082032;
+    font-weight: bold;
+}
+
+.book-input-section {
+    display: block;
+    margin: 16px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(2, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.book-input-section h2 {
+    font-family: CheesePizza;
+    font-size: 2.5em;
+    color: #082032;
+    align-self: center;
+}
+
+.book-input-section form .input {
+    margin: 8px 0;
+}
+
+.book-input-section form .button-submit {
+    background-color: #FF4C29;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.book-input-section .button-submit:hover{
+	background-color: #ff2a00;
+}
+
+.book-input-section .button-submit:active{
+    background-color: #ff2a00;
+	opacity: 0.7;
+}
+
+.book-input-section form button span {
+    font-weight: bold;
+}
+
+.book-input-section form .input input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    background: whitesmoke;
+	border: 1px solid gray;
+	color: #082032;
+	font-weight: 400;
+}
+
+.book-input-section form .input label {
+    color: #082032;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.book-shelf {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(2, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.book-shelf h2 {
+    align-self: center;
+    color: #082032;
+    font-family: CheesePizza;
+    font-size: 2.5em;
+}
+
+.book-shelf .book-list {
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #082032;
+}
+
+.shelf-container {
+    margin-top: 12px;
+    padding: 12px 24px 12px 24px;
+    display: flex;
+}
+
+.shelf-container .shelf-item p {
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.check-button {
+    display: block;
+    background: url("assets/images/check.png");
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url("assets/images/checked.png");
+    background-size: contain;
+}
+
+.check-button:active {
+    opacity: 0.8;
+}
+
+.trash-button{
+    display: block;
+    background: url('assets/images/trash.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url("assets/images/trashed.png");
+    background-size: contain;
+}
+
+.trash-button:active {
+    opacity: 0.8;
+}
+
+.undo-button{
+    display: block;
+    background: url("assets/images/undo.png");
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url("assets/images/undo\ 2.png");
+    background-size: contain;
+}
+
+.undo-button:active {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 645px) {
+    .check-button, .trash-button, .undo-button {
+        background-size: 3em;
+    }
+
+    .check-button:hover, .check-button:active {
+        background-size: 3em;
+
+    }
+
+    .trash-button:hover, .trash-button:active {
+        background-size: 3em;
+
+    }
+
+    .undo-button:hover, .undo-button:active {
+        background-size: 3em;
+
+    }
+}
+
+.container-footer {
+    display: block;
+    background-color: #FF4C29;
+    padding: 10px;
+}
+
+.box-footer {
+    color: white;
+    text-align: center;
+    font-family: Vice;
+}

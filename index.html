@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="assets/images/book.png" rel="shortcut icon">
+    <title> Bookshelf Apps </title>
+</head>
+<body>
+
+<div class="background-wrapper"> 
+
+    <div class="wrapper-head-bar"> 
+        <header class="head-bar">
+            
+            <center> 
+            <section class="search-section">
+        
+                <form id="search-book">
+                    <label for="search-book-title"> Cari Buku Di Rak </label>
+                    <input id="search-book-title"  type="search" placeholder="Masukkan Judul/Penulis/Tahun Buku">
+                    <button id="search-Submit" type="submit"> Cari </button>
+                </form>
+            
+            </section>
+            </center>
+
+        </header>
+    </div>
+
+    <div class="logo"> 
+        <img src="assets/images/logo bookshelf.png" width="260px" height="175px">
+    </div>
+
+</div>
+
+<main>
+
+    <section id="search-Result" class="search-result"> 
+    
+    </section>
+
+    <section class="book-input-section">
+
+    <center> 
+    <h2> Tambah Buku Baru </h2>
+    </center>
+    <form id="form-input-book">
+    <div class="input">
+        <label for="book-title"> Judul Buku </label>
+        <input id="book-title-input" type="text" required placeholder="Judul Buku">
+    </div>
+
+    <div class="input"> 
+        <label for="book-author"> Penulis Buku </label>
+        <input id="book-author-input" type="text" required placeholder="Penulis Buku">
+    </div>
+
+    <div class="input"> 
+        <label for="book-year"> Tahun Buku </label>
+        <input id="book-year-input" type="number" required placeholder="Tahun Buku">
+    </div>
+
+    <input type="submit" value="Masukkan Buku Ke Rak Belum Selesai Dibaca" name="Submit" class="button-submit"> 
+    </form>
+
+    </section>
+
+    <section class="book-shelf">
+        <h2> Belum Selesai Dibaca </h2>
+
+        <div id="inComplete-Bookshelf-List" class="book-list">
+
+        </div>
+    </section>
+
+    <section class="book-shelf">
+        <h2> Selesai Dibaca </h2>
+
+        <div id="Completed-Bookshelf-List" class="book-list">
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container-footer">
+        <div class="box-footer">
+            <p> Copyright &#169; Est.2022 Ltd. All Rights Reserved. </p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js" type="text/javascript"> </script>
+</body>
+</html>
